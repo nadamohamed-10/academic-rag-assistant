@@ -1,0 +1,28 @@
+{
+  "chunk_size": 1000,
+  "chunk_overlap": 200,
+  "separators": [
+    "\n\n",
+    "\n",
+    ". ",
+    " ",
+    ""
+  ],
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "normalize_embeddings": true,
+  "embedding_dimension": 384,
+  "vector_store": "Chroma",
+  "collection_name": "academic_rag",
+  "persist_directory": "models/vectorstore",
+  "top_k": 5,
+  "search_type": "similarity",
+  "n_source_documents": 24,
+  "n_pages_indexed": 476,
+  "n_chunks_indexed": 1801,
+  "n_vectors": 1801,
+  "llm_provider": "groq",
+  "llm_model": "openai/gpt-oss-120b",
+  "llm_temperature": 0,
+  "built_at": "2026-09-18 02:53:39",
+  "python_version": "3.11.9"
+}
